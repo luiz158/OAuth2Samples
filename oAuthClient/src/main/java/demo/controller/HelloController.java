@@ -14,7 +14,7 @@ public class HelloController {
 	public String root() {
 		// Call resource server:
 		String result = restTemplate.getForObject(
-				"http://localhost:8080/oAuthResourceServer/protected", String.class);
+				"http://localhost:8082/protected", String.class);
 		return result;
 	}
 
