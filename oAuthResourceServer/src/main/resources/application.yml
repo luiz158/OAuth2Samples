@@ -4,12 +4,14 @@ spring:
   oauth2:
     client:
       clientId: client
-      clientSecret: secret
-      userAuthorizationUri: http://localhost:8080/oauthServer/oauth/authorize
-      accessTokenUri: http://localhost:8080/oauthServer/oauth/token
+      clientSecret: password
+      userAuthorizationUri: http://localhost:8080/oauth/authorize
+      accessTokenUri: http://localhost:8080/oauth/token
     resource:
-      tokenInfoUri: http://localhost:8080/oauthServer/oauth/check_token 
+      tokenInfoUri: http://localhost:8080/oauth/check_token
 
 # For some reason, we need to turn basic security off,
 # otherwise we will be prompted for credentials unprotected resources.
-security.basic.enabled: false     
+security.basic.enabled: false
+server:
+  port: 8081
