@@ -1,0 +1,11 @@
+security:
+  basic:
+    realm: I am the OAuth2 Server...
+logging:
+  level:
+    root: DEBUG
+    
+
+
+  
+ 
